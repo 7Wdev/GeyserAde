@@ -66,6 +66,6 @@ public record JavaDimension(int minY, int maxY, boolean piglinSafe,boolean ultra
             isNetherLike = DimensionUtils.NETHER_IDENTIFIER.equals(effects);
         }
 
-        return new JavaDimension(minY, maxY, piglinSafe, coordinateScale, bedrockId, isNetherLike);
+        return new JavaDimension(minY, maxY, piglinSafe, ultrawarm,coordinateScale, bedrockId, isNetherLike);
     }
 }

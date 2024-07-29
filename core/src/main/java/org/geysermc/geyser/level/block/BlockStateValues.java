@@ -179,7 +179,7 @@ public final class BlockStateValues {
     public static double getLavaHeight(int state) {
         int lavaLevel = BlockStateValues.getLavaLevel(state);
         if (lavaLevel >= 0) {
-            double lavaHeight = 1 - (lavaLevel + 1) / ((double) NUM_FLUID_LEVELS);
+            double lavaHeight = 1 - (lavaLevel + 1) / ((double) NUM_WATER_LEVELS);
             // Falling lava is a full block
             if (lavaLevel >= 8) {
                 lavaHeight = 1;
