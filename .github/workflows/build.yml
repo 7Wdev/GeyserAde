@@ -33,7 +33,7 @@ jobs:
           setup-java_java-version: 21
 
       - name: Build Geyser
-        run: chmod +x gradlelew; ./gradlew build
+        run: chmod +x gradlew; ./gradlew build
         env:
           BUILD_NUMBER: ${{ steps.release-info.outputs.curentRelease }}
           
