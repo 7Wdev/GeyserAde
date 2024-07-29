@@ -97,7 +97,6 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -208,7 +207,6 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
 
 ### NetBeans ###
 **/nbproject/private/
