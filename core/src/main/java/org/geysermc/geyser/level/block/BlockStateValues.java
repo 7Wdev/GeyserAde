@@ -100,6 +100,25 @@ public final class BlockStateValues {
     }
 
     /**
+     * Get the type of fluid from the block state, including waterlogged blocks.
+     *
+     * @param state BlockState of the block
+     * @return The type of fluid
+     */
+    public static Fluid getFluid(int state) {
+        BlockState blockState = BlockState.of(state);
+        if (blockState.is(Blocks.WATER) || BlockRegistries.WATERLOGGED.get().get(state)) {
+            return Fluid.WATER;
+        }
+
+        if (blockState.is(Blocks.LAVA)) {
+            return Fluid.LAVA;
+        }
+
+        return Fluid.EMPTY;
+    }
+
+    /**
      * Get the level of water from the block state.
      *
      * @param state BlockState of the block
@@ -133,6 +152,39 @@ public final class BlockStateValues {
                 waterHeight = 1;
             }
             return waterHeight;
+        }
+        return -1;
+    }
+
+    /**
+     * Get the level of lava from the block state.
+     *
+     * @param state BlockState of the block
+     * @return The lava level or -1 if the block isn't lava
+     */
+    public static int getLavaLevel(int state) {
+        BlockState blockState = BlockState.of(state);
+        if (!blockState.is(Blocks.LAVA)) {
+            return -1;
+        }
+        return blockState.getValue(Properties.LEVEL);
+    }
+
+    /**
+     * Get the height of lava from the block state
+     *
+     * @param state BlockState of the block
+     * @return The lava height or -1 if the block does not contain lava
+     */
+    public static double getLavaHeight(int state) {
+        int lavaLevel = BlockStateValues.getLavaLevel(state);
+        if (lavaLevel >= 0) {
+            double lavaHeight = 1 - (lavaLevel + 1) / ((double) NUM_FLUID_LEVELS);
+            // Falling lava is a full block
+            if (lavaLevel >= 8) {
+                lavaHeight = 1;
+            }
+            return lavaHeight;
         }
         return -1;
     }

@@ -35,7 +35,7 @@ import org.geysermc.geyser.util.DimensionUtils;
  * @param piglinSafe Whether piglins and hoglins are safe from conversion in this dimension.
  *      This controls if they have the shaking effect applied in the dimension.
  */
-public record JavaDimension(int minY, int maxY, boolean piglinSafe, double worldCoordinateScale, int bedrockId, boolean isNetherLike) {
+public record JavaDimension(int minY, int maxY, boolean piglinSafe,boolean ultrawarm, double worldCoordinateScale, int bedrockId, boolean isNetherLike) {
 
     public static JavaDimension read(RegistryEntryContext entry) {
         NbtMap dimension = entry.data();
@@ -45,6 +45,8 @@ public record JavaDimension(int minY, int maxY, boolean piglinSafe, double world
 
         // Set if piglins/hoglins should shake
         boolean piglinSafe = dimension.getBoolean("piglin_safe");
+        // Entities in lava move faster in ultrawarm dimensions
+        boolean ultrawarm = dimension.getBoolean("ultrawarm");
         // Load world coordinate scale for the world border
         double coordinateScale = dimension.getDouble("coordinate_scale");
 
