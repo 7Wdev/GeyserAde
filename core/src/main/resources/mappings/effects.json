@@ -1,0 +1,193 @@
+{
+  "SOUND_CRAFTER_CRAFT": {
+    "name": "CRAFTER_CRAFT",
+    "type": "soundEvent"
+  },
+  "SOUND_CRAFTER_FAIL": {
+    "name": "CRAFTER_FAILED",
+    "type": "soundEvent"
+  },
+  "SOUND_DISPENSER_DISPENSE": {
+    "data": 1000,
+    "name": "SOUND_CLICK",
+    "type": "soundLevel"
+  },
+  "SOUND_DISPENSER_FAIL": {
+    "data": 1200,
+    "name": "SOUND_CLICK_FAIL",
+    "type": "soundLevel"
+  },
+  "SOUND_DISPENSER_PROJECTILE_LAUNCH": {
+    "data": 1000,
+    "name": "SOUND_CLICK",
+    "type": "soundLevel"
+  },
+  "SOUND_FIREWORK_SHOOT": {
+    "name": "LAUNCH",
+    "type": "soundEvent"
+  },
+  "SOUND_EXTINGUISH_FIRE": {
+    "name": "EXTINGUISH_FIRE",
+    "type": "soundEvent"
+  },
+  "SOUND_PLAY_JUKEBOX_SONG": {
+    "type": "record"
+  },
+  "SOUND_GHAST_WARNING": {
+    "name": "SOUND_GHAST_WARNING",
+    "type": "soundLevel"
+  },
+  "SOUND_GHAST_FIREBALL": {
+    "name": "SOUND_GHAST_FIREBALL",
+    "type": "soundLevel"
+  },
+  "SOUND_DRAGON_FIREBALL": {
+    "name": "SOUND_GHAST_FIREBALL",
+    "type": "soundLevel"
+  },
+  "SOUND_BLAZE_FIREBALL": {
+    "name": "SOUND_BLAZE_FIREBALL",
+    "type": "soundLevel"
+  },
+  "SOUND_ZOMBIE_WOODEN_DOOR": {
+    "name": "SOUND_ZOMBIE_DOOR_BUMP",
+    "type": "soundLevel"
+  },
+  "SOUND_ZOMBIE_IRON_DOOR": {
+    "name": "",
+    "type": ""
+  },
+  "SOUND_ZOMBIE_DOOR_CRASH": {
+    "name": "SOUND_ZOMBIE_DOOR_CRASH",
+    "type": "soundLevel"
+  },
+  "SOUND_WITHER_BLOCK_BREAK": {
+    "name": "SOUND_ZOMBIE_DOOR_CRASH",
+    "type": "soundLevel"
+  },
+  "SOUND_WITHER_BOSS_SPAWN": {
+    "identifier": "minecraft:wither",
+    "name": "SPAWN",
+    "type": "soundEvent"
+  },
+  "SOUND_WITHER_BOSS_SHOOT": {
+    "identifier": "minecraft:wither",
+    "name": "SHOOT",
+    "type": "soundEvent"
+  },
+  "SOUND_BAT_LIFTOFF": {
+    "identifier": "minecraft:bat",
+    "name": "TAKEOFF",
+    "type": "soundEvent"
+  },
+  "SOUND_ZOMBIE_INFECTED": {
+    "name": "",
+    "type": ""
+  },
+  "SOUND_ZOMBIE_CONVERTED": {
+    "name": "UNFECT",
+    "type": "soundEvent"
+  },
+  "ANIMATION_DRAGON_SUMMON_ROAR": {
+    "name": "mob.enderdragon.growl",
+    "volume": 64.0,
+    "pitch_sub": false,
+    "pitch_mul": 0.3,
+    "pitch_add": 0.8,
+    "relative": true,
+    "type": "playSound"
+  },
+  "SOUND_DRAGON_DEATH": {
+    "identifier": "minecraft:ender_dragon",
+    "name": "DEATH",
+    "type": "soundEvent"
+  },
+  "SOUND_ANVIL_BROKEN": {
+    "name": "SOUND_ANVIL_BROKEN",
+    "type": "soundLevel"
+  },
+  "SOUND_ANVIL_USED": {
+    "name": "SOUND_ANVIL_USED",
+    "type": "soundLevel"
+  },
+  "SOUND_ANVIL_LAND": {
+    "name": "SOUND_ANVIL_LAND",
+    "type": "soundLevel"
+  },
+  "SOUND_PORTAL_TRAVEL": {
+    "name": "portal.travel",
+    "volume": 0.25,
+    "pitch_sub": false,
+    "pitch_mul": 0.4,
+    "pitch_add": 0.8,
+    "relative": false,
+    "type": "playSound"
+  },
+  "SOUND_CHORUS_GROW": {
+    "name": "CHORUS_GROW",
+    "type": "soundEvent"
+  },
+  "SOUND_CHORUS_DEATH": {
+    "name": "CHORUS_DEATH",
+    "type": "soundEvent"
+  },
+  "SOUND_BREWING_STAND_BREW": {
+    "name": "POTION_BREWED",
+    "type": "soundEvent"
+  },
+  "SOUND_END_PORTAL_SPAWN": {
+    "name": "BLOCK_END_PORTAL_SPAWN",
+    "type": "soundEvent"
+  },
+  "SOUND_PHANTOM_BITE": {
+    "identifier": "minecraft:phantom",
+    "name": "ATTACK",
+    "type": "soundEvent"
+  },
+  "SOUND_ZOMBIE_TO_DROWNED": {
+    "name": "entity.zombie.converted_to_drowned",
+    "volume": 2.0,
+    "pitch_sub": true,
+    "pitch_mul": 0.2,
+    "pitch_add": 1.0,
+    "relative": true,
+    "type": "playSound"
+  },
+  "SOUND_HUSK_TO_ZOMBIE": {
+    "name": "",
+    "type": ""
+  },
+  "SOUND_GRINDSTONE_USED": {
+    "name": "GRINDSTONE_USE",
+    "type": "soundEvent"
+  },
+  "SOUND_PAGE_TURN": {
+    "name": "item.book.page_turn",
+    "volume": 1.0,
+    "pitch_sub": false,
+    "pitch_mul": 0.1,
+    "pitch_add": 0.9,
+    "relative": true,
+    "type": "playSound"
+  },
+  "SOUND_SMITHING_TABLE_USED": {
+    "name": "SMITHING_TABLE_USE",
+    "type": "soundEvent"
+  },
+  "SOUND_POINTED_DRIPSTONE_LAND": {
+    "name": "SOUND_POINTED_DRIPSTONE_LAND",
+    "type": "soundLevel"
+  },
+  "SOUND_DRIP_WATER_INTO_CAULDRON": {
+    "name": "POINTED_DRIPSTONE_CAULDRON_DRIP_WATER",
+    "type": "soundEvent"
+  },
+  "SOUND_DRIP_LAVA_INTO_CAULDRON": {
+    "name": "POINTED_DRIPSTONE_CAULDRON_DRIP_LAVA",
+    "type": "soundEvent"
+  },
+  "SOUND_SKELETON_TO_STRAY": {
+    "name": "CONVERT_TO_STRAY",
+    "type": "soundEvent"
+  }
+}
