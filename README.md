@@ -4,6 +4,7 @@ You can download spigot version from releases.
 
 - Code Sources:
 GeyserMC - master (uptodate)
+
 Emulate client side vehicle movement #4648 (uptodate)
 
 <img src="https://geysermc.org/img/geyser-1760-860.png" alt="Geyser" width="600"/>
