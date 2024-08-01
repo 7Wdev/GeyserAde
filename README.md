@@ -4,7 +4,7 @@ You can download spigot version from releases.
 
 - Code Sources:
 
-GeyserMC - master (uptodate)
+GeyserMC - master (needsanupdate)
 
 Emulate client side vehicle movement #4648 (uptodate)
 
