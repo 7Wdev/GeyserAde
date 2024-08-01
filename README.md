@@ -1,4 +1,4 @@
-This repo contains The sourcode of Ade own version of Geyser.
+This repo is temporary, it contains The source code of Ade's version of Geyser which combines prs with lastest changes.
 
 You can download spigot version from releases.
 
